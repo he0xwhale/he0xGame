@@ -45,8 +45,6 @@
 
 
     
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
 
 
 
@@ -297,9 +295,9 @@
                             
                                 "开发游戏就像是在制作一个魔法世界，你需要用代码和技术创造一个虚拟世界，并给予玩家探索和体验的机会",
                             
-                                "游戏开发就像是在制作一款交互式艺术作品，你需要在技术和创意之间平衡，创造出一个充满魅力和深度的作品",
+                                "游戏开发就像是在制作一款交互式艺术作品，你需要在技术和创意之间平衡，创造出一件充满魅力和深度的作品",
                             
-                                "游戏开发就像是乐高积木，你可以专注于投入一块一块的积木，也可以将它们放在一起创造一个绝妙的建筑作品",
+                                "游戏开发就像是乐高积木，你可以专注于投入一块一块的积木，也可以将它们放在一起创造一件绝妙的建筑作品",
                             
                         ],
                         startDelay: 300,
@@ -675,6 +673,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
@@ -716,6 +722,10 @@ $(function () {
     
     
 
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon.min.js" async="async"></script>
     
 
     
